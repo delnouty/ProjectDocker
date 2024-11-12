@@ -20,9 +20,6 @@ To set up and run this application, follow the steps below:
 git clone git@github.com:delnouty/ProjectDocker.git
 cd your-repo-name
 ```
-## Installation Instructions
-
-To set up and run this application, follow the steps below:
 
 ### 2. Create a Virtual Environment
 
