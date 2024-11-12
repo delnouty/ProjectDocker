@@ -1,0 +1,47 @@
+# Ignore Python bytecode
+__pycache__
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+venv/
+ENV/
+env/
+
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore Docker files
+Dockerfile
+.dockerignore
+
+# Ignore build output
+build/
+dist/
+*.egg-info/
+
+# Ignore IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# Ignore logs and databases
+*.log
+*.sqlite3
+
+# Ignore unit test / coverage reports
+htmlcov/
+.coverage
+.tox/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Flask specific
+instance/
+.webassets-cache
+
+# Ignore system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,42 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.tox/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Flask specific
+instance/
+.webassets-cache
+
+# Docker
+docker-compose.yml
+*.dockerfile
+
+# System files
+.DS_Store
+Thumbs.db

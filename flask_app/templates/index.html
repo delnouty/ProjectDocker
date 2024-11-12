@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Application</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Simple Stats</h1>
+    <h2>Welcome to your Simple-Statistics!</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if name %}
+        <p>Hello, {{ name }}!</p>
+    {% endif %}
+
+    <p>Here you can write any text, load data, or upload your own dataset.</p>
+
+    <a href="{{ url_for('download_example') }}">Download Example CSV</a>
+
+    <h3>Here is an example table with data:</h3>
+    {{ df.to_html(classes="data")|safe }}
+
+    <h3>Upload Your Own Dataset</h3>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv">
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if uploaded_df is not none %}
+        <h3>Here is a preview of your uploaded dataset:</h3>
+        {{ uploaded_df.to_html(classes="data")|safe }}
+        <h3>Basic Statistics:</h3>
+        {{ stats|safe }}
+    {% endif %}
+</body>
+</html>
