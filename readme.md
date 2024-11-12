@@ -19,7 +19,7 @@ To set up and run this application, follow the steps below:
 ```bash
 git clone 
 cd your-repo
-
+```
 ## Installation Instructions
 
 To set up and run this application, follow the steps below:
