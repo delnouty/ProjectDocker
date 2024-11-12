@@ -17,8 +17,8 @@ To set up and run this application, follow the steps below:
 ### 1. Clone the Repository
 
 ```bash
-git clone 
-cd your-repo
+git clone git@github.com:delnouty/ProjectDocker.git
+cd your-repo-name
 ```
 ## Installation Instructions
 
@@ -33,3 +33,12 @@ Create and activate a virtual environment to manage dependencies:
   ```bash
   python -m venv venv
   venv\Scripts\activate
+  ```
+  
+### 3. Install Dependencies
+Install the required dependencies using `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
