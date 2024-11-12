@@ -62,7 +62,6 @@ If you prefer to use Docker, follow these steps:
 
 #### Build the Docker Image, Run the Docker Container, Access the Application
 
-Build the Docker image from the Dockerfile:
 ```bash
 docker build -t flask_app:latest .
 docker run -p 5000:5000 flask_app
